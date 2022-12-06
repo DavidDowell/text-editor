@@ -20,13 +20,15 @@ module.exports = () => {
     plugins: [
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js'
+        swDest: 'src-sw.js'
       }),
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Webpack Plugin'
+        title: 'Text Editor'
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'Text Editor Application',
         short_name: 'Text Editor',
         description: 'Persist code hw',
@@ -35,14 +37,8 @@ module.exports = () => {
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            size: [96],
+            size: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
-          },
-          {
-            src: path.resolve('src/images/logo.png'),
-            size: '96x96',
-            destination: path.join('assets', 'icons'),
-            purpose: 'maskable'
           }
         ]
       })
