@@ -20,7 +20,7 @@
   
 
   ## Usage Information
-  Copy my code and file structure into your IDE. Open a terminal and run "npm init -y" and "npm install" to grab all of the dependencies for this application. Npm start runs the application in the browser. When posting in the application IndexedDB will store the input in a database. Content will be persisted there are retrieved when reopening the application. This application then can be installed and downloaded as a desktop icon with a service worker using Workbox. After registering the service worker the users static assets will be precached after loading.
+  Copy my code and file structure into your IDE. Open a terminal and run "npm init -y" then "npm install" to grab all of the dependencies in the root of the application, cd into the client directory and "npm install", cd into the server and "npm install". "Npm start" runs the application in the browser. When posting in the application IndexedDB will store the input in a database. Content will be persisted there are retrieved when reopening the application. This application then can be installed and downloaded as a desktop icon with a service worker using Workbox. After registering the service worker the users static assets will be precached after loading.
 
   ## License 
   
