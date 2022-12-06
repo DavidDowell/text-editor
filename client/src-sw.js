@@ -1,5 +1,5 @@
 import { offlineFallback, warmStrategyCache } from 'workbox-recipes';
-import { resgisterRoute } from 'workbox-routing';
+import { registerRoute } from 'workbox-routing';
 import { CacheFirst } from 'workbox-strategies';
 import { precacheAndRoute } from 'workbox-precaching';
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
