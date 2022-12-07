@@ -1,8 +1,8 @@
 {
   "name": "jate",
   "engines": {
-    "node": "14.17.3",
-    "npm": "6.14.13"
+    "node": "16.17.0",
+    "npm": "8.15.0"
   },
   "scripts": {
     "dev": "webpack-dev-server",
