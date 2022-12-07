@@ -14,24 +14,26 @@ module.exports = () => {
       install: './src/js/install.js'
     },
     output: {
-      filename: '[name]bundle.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js'
+        swDest: 'service-worker.js'
       }),
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Text Editor'
+        title: 'JATE'
       }),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editor Application',
-        short_name: 'Text Editor',
-        description: 'Persist code hw',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E.',
+        description: 'Take notes with Javascript syntax highlighting!',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: './',
         publicPath: './',
         icons: [
@@ -51,16 +53,16 @@ module.exports = () => {
           use: ['style-loader', 'css-loader']
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: 'asset/resource',
-        },
-        {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: [
+                '@babel/plugin-proposal-object-rest-spread',
+                '@babel/transform-runtime',
+              ]
             },
           },
         },
