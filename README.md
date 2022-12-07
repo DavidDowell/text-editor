@@ -1,6 +1,7 @@
 
   # Text Editor
 
+![](client/src/images/Screen%20Shot%202022-12-07%20at%2011.59.33%20AM.png)
 
   ## Description
   This text editor will allow the user to persist text data in the browser without an internet connection by utilizing this progressive web application.
@@ -22,7 +23,8 @@
   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
   ![JavaScript](https://img.shields.io/badge/-javascript-4D6967.svg?style=for-the-badge&logo=javascript&logoColor=white)
   ![Webpack](https://img.shields.io/badge/-webpack-blueviolet.svg?style=for-the-badge&logo=webpack&logoColor=white)
-  
+  ![express](https://img.shields.io/badge/-express-FFB6C1.svg?style=for-the-badge&logo=express&logoColor=white)
+  ![node.js](https://img.shields.io/badge/-node.js-4169E1.svg?style=for-the-badge&logo=node.js&logoColor=white)
 
   ## Usage Information
   Copy my code and file structure into your IDE. Open a terminal and run "npm init -y" then "npm install" to grab all of the dependencies in the root of the application. "Npm start" runs the application in the browser and is located on localhost:3000. When posting in the application IndexedDB will store the input in a database, so the data can be persisted without internet connection. Content will be persisted and retrieved when reopening the application. This application then can be installed using the "Install Me!" button and following the prompt provided. After registering the service worker the users static assets will be precached after loading.
@@ -41,7 +43,7 @@
 
   https://github.com/DavidDowell/text-editor
 
-  
+  https://mysterious-garden-48318.herokuapp.com/
 
 
   ## Questions can be sent to the following contact:
